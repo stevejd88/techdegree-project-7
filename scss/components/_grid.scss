@@ -1,0 +1,25 @@
+// **************************************
+// grid
+// **************************************
+
+header {
+  grid-area: head;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas:
+  "head head head"
+  "nav main main";
+}
