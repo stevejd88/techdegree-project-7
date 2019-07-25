@@ -5,13 +5,52 @@
 header {
   grid-area: head;
 }
-
 nav {
-  grid-area: nav;
+  grid-area: navi;
 }
-
 main {
   grid-area: main;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+  grid-template-areas:
+    "dashboard  search search search search search"
+    "traffic traffic traffic traffic traffic traffic"
+    "daily daily daily users users users"
+    "stats stats stats stats stats stats"
+    "members members members activity activity activity"
+    "message message message settings settings settings";
+}
+h2 {
+  grid-area: dashboard;
+}
+.search {
+  grid-area: search;
+}
+.traffic {
+  grid-area: traffic;
+}
+.daily-traffic {
+  grid-area: daily;
+}
+.mobile-users {
+  grid-area: users;
+}
+.social-stats {
+  grid-area: stats;
+}
+.new-members {
+  grid-area: members;
+}
+.recent-activity {
+  grid-area: activity;
+}
+.message-user {
+  grid-area: message;
+}
+.settings {
+  grid-area: settings;
 }
 
 .main-container {
@@ -21,5 +60,5 @@ main {
   grid-template-columns: 1fr 2fr 2fr;
   grid-template-areas:
   "head head head"
-  "nav main main";
+  "navi main main";
 }
