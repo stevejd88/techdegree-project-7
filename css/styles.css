@@ -426,4 +426,8 @@ h2 {
   grid-template-areas: "head head head" "navi main main";
 }
 
+img {
+  height: 30px;
+}
+
 /*# sourceMappingURL=styles.css.map */
