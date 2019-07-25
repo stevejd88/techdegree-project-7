@@ -14,7 +14,7 @@ nav {
 }
 
 main {
-  background-color: #976698;
+  background-color: #ffffff;
 }
 
 main div {
@@ -23,4 +23,9 @@ main div {
 
 body {
   overflow-y: scroll;
+}
+
+canvas {
+  max-height: 350px;
+  max-width: 1000px;
 }

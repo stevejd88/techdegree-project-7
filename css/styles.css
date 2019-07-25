@@ -350,7 +350,7 @@ nav {
 }
 
 main {
-  background-color: #976698;
+  background-color: #ffffff;
 }
 
 main div {
@@ -359,6 +359,11 @@ main div {
 
 body {
   overflow-y: scroll;
+}
+
+canvas {
+  max-height: 350px;
+  max-width: 1000px;
 }
 
 header {
@@ -421,13 +426,17 @@ h2 {
 .main-container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 100px;
+  grid-template-rows: auto;
   grid-template-columns: 1fr 2fr 2fr;
   grid-template-areas: "head head head" "navi main main";
 }
 
 img {
   height: 30px;
+}
+
+svg {
+  height: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
