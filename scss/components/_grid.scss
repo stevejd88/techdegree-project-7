@@ -12,15 +12,31 @@ main {
   grid-area: main;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 5px;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "dashboard  search search search search search"
-    "traffic traffic traffic traffic traffic traffic"
-    "daily daily daily users users users"
-    "stats stats stats stats stats stats"
-    "members members members activity activity activity"
-    "message message message settings settings settings";
+    "dashboard"
+    "search"
+    "traffic"
+    "daily"
+    "users"
+    "stats"
+    "members"
+    "activity"
+    "message"
+    "settings";
+  @include mq('md') {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    grid-template-areas:
+      "dashboard  search search search search search"
+      "traffic traffic traffic traffic traffic traffic"
+      "daily daily daily users users users"
+      "stats stats stats stats stats stats"
+      "members members members activity activity activity"
+      "message message message settings settings settings";
+  }
+
 }
 h2 {
   grid-area: dashboard;
@@ -57,8 +73,16 @@ h2 {
   height: 100vh;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "head head head"
-    "navi main main";
+    "head"
+    "navi"
+    "main";
+  @include mq('md') {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas:
+      "head head head"
+      "navi main main";
+  }
 }
