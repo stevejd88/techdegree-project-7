@@ -337,28 +337,47 @@ template {
   display: none;
 }
 
+ul {
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  color: #292929;
 }
 
 header {
-  background-color: #3398cc;
+  background-color: #806fe6;
+  color: #fcfcfc;
 }
 
 nav {
-  background-color: #309e35;
+  background-color: #56497e;
 }
 
 main {
-  background-color: #ffffff;
+  background-color: #fcfcfc;
 }
 
 main div {
   border: 1px solid #000000;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #806fe6;
+  text-decoration: none;
 }
 
 canvas {

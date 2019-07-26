@@ -7,21 +7,36 @@
 }
 body {
   font-family: $font-stack-primary;
+  color: $font;
 }
 
 header {
-  background-color: #3398cc;
+  background-color: $main-light;
+  color: $white;
 }
 nav {
-  background-color: #309e35;
+  background-color: $main-dark;
 }
 
 main {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 main div {
   border: 1px solid #000000;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: $main-light;
+  text-decoration: none;
 }
 
 
