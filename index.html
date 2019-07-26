@@ -13,6 +13,7 @@
         <img src="images/member-1.jpg" alt="user icon">
         <h3>Norm Mc Donald</h3>
       </header>
+
       <nav>
         <ul>
           <li><img src="icons/icon-dashboard.svg" alt="dashboard icon"></li>
@@ -20,23 +21,29 @@
           <li><img src="icons/icon-visits.svg" alt="visit icon"></li>
           <li><img src="icons/icon-settings.svg" alt="settings icon"></li>
         </ul>
-      </nav>
+      </nav> <!--End of main-nav -->
+
       <main class="dashboard">
         <h2>Dashboard</h2>
         <div class="search">
           <input type="text" placeholder="Search">
-        </div>
+        </div> <!--main search bar -->
+
         <div class="traffic">
-          <div class="alert-pop-up"></div>
+          <div class="alertPopUp"></div>
           <h3>traffic</h3>
           <canvas id="myChart"></canvas>
-        </div>
+        </div> <!--traffic chart-->
+
         <div class="daily-traffic">
           <h3>daily traffic</h3>
-        </div>
+          <canvas id="barGraph"></canvas>
+        </div> <!--daily traffic bar graph -->
+
         <div class="mobile-users">
           <h3>mobile users</h3>
-        </div>
+        </div> <!--mobile pie chart -->
+
         <div class="social-stats">
           <h3>social stats</h3>
           <div class="media-card">
@@ -58,7 +65,7 @@
             </svg>
             <h2>Facebook</h2>
             <p>8,739</p>
-          </div> <!--End of Twitter card -->
+          </div> <!--End of Facebook card -->
           <div class="media-card">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
@@ -82,7 +89,8 @@
             <h2>Google+</h2>
             <p>2,530</p>
           </div> <!--End of google+ card -->
-        </div>
+        </div> <!--end of social media  div-->
+
         <div class="new-members">
           <h3>new members</h3>
         </div>
@@ -101,5 +109,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="js/charts.js"></script>
+    <script src="js/bar-graph.js"></script>
   </body>
 </html>
