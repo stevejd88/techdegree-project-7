@@ -366,6 +366,10 @@ canvas {
   max-width: 100%;
 }
 
+#pieGraph {
+  z-index: 5;
+}
+
 header {
   grid-area: head;
 }
