@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Web App</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/css-toggle-switch/dist/toggle-switch.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="main-container">
@@ -32,7 +32,7 @@
 
         <div class="traffic">
           <div class="alertPopUp"></div> <!--Empty Div for JavaScript alert -->
-          <div>
+          <div class="time-toggle">
             <h3>traffic</h3>
             <div class="switch-toggle switch-candy">
               <input id="hour3" name="view3" type="radio" checked>
@@ -49,7 +49,7 @@
 
               <a></a>
             </div>
-          </div>
+          </div> <!--time-toggle -->
           <canvas id="myChart"></canvas>
         </div> <!--traffic chart-->
 
@@ -201,8 +201,9 @@
                 <a></a>
               </span>
             </label>
-          </div>
-          <div class="send-email">
+          </div> <!--end of email-toggle -->
+
+          <div class="set-public">
             <label class="switch-light switch-material" onclick="">
               <input type="checkbox">
 
@@ -216,7 +217,8 @@
                 <a></a>
               </span>
             </label>
-          </div>
+          </div> <!--end of profile-toggle -->
+
           <select placeholder="Search for User">
             <option value="">Select Timezone</option>
             <option value="PST">PST</option>
@@ -228,9 +230,9 @@
             <button type="submit">Save</button>
             <button type="reset">Cancel</button>
           </div>
-        </div>
+        </div><!--end of settings div -->
       </main>
-    </div>
+    </div> <!--end of main-container -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="js/charts.js"></script>
     <script src="js/bar-graph.js"></script>

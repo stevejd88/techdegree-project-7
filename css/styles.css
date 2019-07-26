@@ -341,6 +341,10 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
 header {
   background-color: #3398cc;
 }
@@ -357,17 +361,9 @@ main div {
   border: 1px solid #000000;
 }
 
-body {
-  overflow-y: scroll;
-}
-
 canvas {
   max-height: 350px;
   max-width: 100%;
-}
-
-#pieGraph {
-  z-index: 5;
 }
 
 header {

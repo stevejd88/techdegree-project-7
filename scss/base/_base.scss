@@ -5,6 +5,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: $font-stack-primary;
+}
 
 header {
   background-color: #3398cc;
@@ -21,9 +24,7 @@ main div {
   border: 1px solid #000000;
 }
 
-body {
-  overflow-y: scroll;
-}
+
 
 canvas {
   max-height: 350px;
