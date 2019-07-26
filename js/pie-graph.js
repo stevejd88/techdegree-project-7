@@ -16,9 +16,9 @@ var myDoughnutChart = new Chart(ctx, {
             weight: 1,
         }],
         labels: [
-            'Red',
-            'Yellow',
-            'Blue'
+            'Tablets',
+            'Phones',
+            'Desktop'
         ]
     },
     options: {
