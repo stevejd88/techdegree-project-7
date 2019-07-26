@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Web App</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/css-toggle-switch/dist/toggle-switch.css">
   </head>
   <body>
     <div class="main-container">
@@ -30,8 +31,25 @@
         </div> <!--main search bar -->
 
         <div class="traffic">
-          <div class="alertPopUp"></div>
-          <h3>traffic</h3>
+          <div class="alertPopUp"></div> <!--Empty Div for JavaScript alert -->
+          <div>
+            <h3>traffic</h3>
+            <div class="switch-toggle switch-candy">
+              <input id="hour3" name="view3" type="radio" checked>
+              <label for="hour3" onclick="">Hourly</label>
+
+              <input id="day3" name="view3" type="radio">
+              <label for="day3" onclick="">Daily</label>
+
+              <input id="week3" name="view3" type="radio">
+              <label for="week3" onclick="">Weekly</label>
+
+              <input id="month3" name="view3" type="radio">
+              <label for="month3" onclick="">Monthly</label>
+
+              <a></a>
+            </div>
+          </div>
           <canvas id="myChart"></canvas>
         </div> <!--traffic chart-->
 
@@ -169,6 +187,36 @@
 
         <div class="settings">
           <h3>settings</h3>
+          <div class="send-email">
+            <label class="switch-light switch-material" onclick="">
+              <input type="checkbox">
+
+              <strong>
+                Send Email Notifications
+              </strong>
+
+              <span>
+                <span>Off</span>
+                <span>On</span>
+                <a></a>
+              </span>
+            </label>
+          </div>
+          <div class="send-email">
+            <label class="switch-light switch-material" onclick="">
+              <input type="checkbox">
+
+              <strong>
+                Set Profile to Public
+              </strong>
+
+              <span>
+                <span>Off</span>
+                <span>On</span>
+                <a></a>
+              </span>
+            </label>
+          </div>
           <select placeholder="Search for User">
             <option value="">Select Timezone</option>
             <option value="PST">PST</option>
