@@ -54,7 +54,7 @@ h2 {
     "main";
   @include mq('md') {
     grid-template-rows: 100px auto;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 100px 2fr 2fr;
     grid-template-areas:
       "head head head"
       "navi main main";

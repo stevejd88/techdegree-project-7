@@ -387,14 +387,10 @@ main {
   background-color: #fcfcfc;
 }
 
-main div {
-  border: 1px solid #000000;
-}
-
 h1 {
   font-size: 1.8em;
   margin: auto;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-right: 30px;
 }
 h1 > span {
@@ -482,7 +478,7 @@ h2 {
 @media (min-width: 768px) {
   .main-container {
     grid-template-rows: 100px auto;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 100px 2fr 2fr;
     grid-template-areas: "head head head" "navi main main";
   }
 }
