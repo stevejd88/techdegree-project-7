@@ -354,6 +354,11 @@ header {
   background-color: #806fe6;
   color: #fcfcfc;
 }
+header > h3 {
+  font-size: 16px;
+  margin: auto;
+  width: 100px;
+}
 
 nav {
   background-color: #56497e;
@@ -365,6 +370,17 @@ main {
 
 main div {
   border: 1px solid #000000;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+h1 > span {
+  font-size: 0.5em;
+  position: absolute;
 }
 
 h3 {
@@ -387,26 +403,18 @@ canvas {
 
 header {
   grid-area: head;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 nav {
   grid-area: navi;
 }
-
-main {
-  grid-area: main;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  grid-template-areas: "dashboard" "search" "traffic" "daily" "users" "stats" "members" "activity" "message" "settings";
-}
-@media (min-width: 768px) {
-  main {
-    grid-template-rows: auto;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 5px;
-    grid-template-areas: "dashboard  search search search search search" "traffic traffic traffic traffic traffic traffic" "daily daily daily users users users" "stats stats stats stats stats stats" "members members members activity activity activity" "message message message settings settings settings";
-  }
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 h2 {
@@ -450,9 +458,10 @@ h2 {
 }
 
 .main-container {
+  position: relative;
   height: 100vh;
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 80px 100px auto;
   grid-template-columns: 1fr;
   grid-template-areas: "head" "navi" "main";
 }
@@ -464,12 +473,68 @@ h2 {
   }
 }
 
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "dashboard" "search" "traffic" "daily" "users" "stats" "members" "activity" "message" "settings";
+}
+@media (min-width: 768px) {
+  main {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+    grid-template-areas: "dashboard  search search search search search" "traffic traffic traffic traffic traffic traffic" "daily daily daily users users users" "stats stats stats stats stats stats" "members members members activity activity activity" "message message message settings settings settings";
+  }
+}
+
 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+.img-main-user {
+  margin-left: 10px;
+}
+
+.alert-img {
+  border-radius: 0px;
+  border-right: 1px solid black;
+  width: 30px;
   height: 30px;
+  padding-right: 10px;
+}
+
+nav img {
+  border-radius: 0px;
+  margin: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 svg {
   height: 40px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
