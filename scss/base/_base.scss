@@ -17,8 +17,24 @@ header {
     font-size: 16px;
     margin: auto;
     width: 100px;
+    @include mq('md') {
+      margin: 0;
+      margin-top: 40px;
+      width: 200px;
+    }
   }
 }
+
+hr {
+  height: 50px;
+  margin: auto;
+  @include mq('md') {
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+}
+
 nav {
   background-color: $main-dark;
 }

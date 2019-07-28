@@ -6,5 +6,6 @@ nav ul {
   @include flex-me($dir:row, $just:center);
   @include mq('md') {
     @include flex-me($dir:column, $just:center);
+    align-items: center;
   }
 }

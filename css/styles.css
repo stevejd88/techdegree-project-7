@@ -359,6 +359,25 @@ header > h3 {
   margin: auto;
   width: 100px;
 }
+@media (min-width: 768px) {
+  header > h3 {
+    margin: 0;
+    margin-top: 40px;
+    width: 200px;
+  }
+}
+
+hr {
+  height: 50px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  hr {
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+}
 
 nav {
   background-color: #56497e;
@@ -411,11 +430,6 @@ header {
 nav {
   grid-area: navi;
 }
-nav > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 h2 {
   grid-area: dashboard;
@@ -467,7 +481,7 @@ h2 {
 }
 @media (min-width: 768px) {
   .main-container {
-    grid-template-rows: auto;
+    grid-template-rows: 100px auto;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-areas: "head head head" "navi main main";
   }
@@ -504,13 +518,22 @@ header img {
 .img-main-user {
   margin-left: 10px;
 }
+@media (min-width: 768px) {
+  .img-main-user {
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+}
 
 .alert-img {
-  border-radius: 0px;
-  border-right: 1px solid black;
   width: 30px;
   height: 30px;
-  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .alert-img {
+    margin-right: 15px;
+  }
 }
 
 nav img {
@@ -534,6 +557,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 
