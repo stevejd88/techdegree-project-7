@@ -8,7 +8,7 @@
     @include flex-me($dir:row, $just:space-around);
     > h3 {
       margin: auto;
-      margin-left: 20px;
+      margin-left: 0px;
     }
     .switch-toggle {
       margin-right: 10px;

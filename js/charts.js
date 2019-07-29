@@ -8,10 +8,10 @@ var chart = new Chart(ctx, {
         labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '27-3', '4-10', '11-17', '18-24', '25-31'],
         datasets: [{
             label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            pointBackgroundColor: 'rgb(255, 255, 255)',
-            pointBorderColor: 'rgb(0, 0, 0)',
+            backgroundColor: 'rgb(104, 91, 207, 0.2)',
+            borderColor: 'rgb(104, 91, 207, 0.5)',
+            pointBackgroundColor: 'rgb(252, 252, 252)',
+            pointBorderColor: 'rgb(86, 73, 126)',
             lineTension:	'0',
             data: [750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250]
         }]
