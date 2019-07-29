@@ -423,6 +423,29 @@ canvas {
   max-width: 100%;
 }
 
+@media (min-width: 768px) {
+  .switch-toggle {
+    width: 300px;
+  }
+}
+
+.switch-toggle.switch-candy,
+.switch-light.switch-candy > span {
+  background-color: white;
+  box-shadow: none;
+}
+
+.switch-light.switch-candy span span,
+.switch-light.switch-candy input:checked ~ span span:first-child,
+.switch-toggle.switch-candy label {
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+
+.switch-candy a {
+  border-radius: 10px;
+}
+
 header {
   grid-area: head;
   display: flex;
@@ -586,6 +609,24 @@ nav ul {
     margin-top: 15px;
     padding: 10px;
     width: 400px;
+  }
+}
+
+.time-toggle {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .time-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .time-toggle > h3 {
+    margin: auto;
+    margin-left: 20px;
+  }
+  .time-toggle .switch-toggle {
+    margin-right: 10px;
   }
 }
 

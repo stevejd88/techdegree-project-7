@@ -82,3 +82,26 @@ canvas {
   max-height: 350px;
   max-width: 100%;
 }
+
+.switch-toggle {
+  @include mq('md'){
+    width: 300px;
+  }
+}
+
+.switch-toggle.switch-candy,
+.switch-light.switch-candy > span {
+  background-color: white;
+  box-shadow: none;
+}
+
+.switch-light.switch-candy span span,
+.switch-light.switch-candy input:checked ~ span span:first-child,
+.switch-toggle.switch-candy label {
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+
+.switch-candy a {
+  border-radius: 10px;
+}

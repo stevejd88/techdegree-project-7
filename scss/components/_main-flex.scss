@@ -1,0 +1,17 @@
+// **************************************
+// .main-div flex boxes
+// **************************************
+
+.time-toggle {
+  margin-top: 20px;
+  @include mq('md') {
+    @include flex-me($dir:row, $just:space-around);
+    > h3 {
+      margin: auto;
+      margin-left: 20px;
+    }
+    .switch-toggle {
+      margin-right: 10px;
+    }
+  }
+}
