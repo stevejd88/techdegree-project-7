@@ -38,6 +38,11 @@ h2 {
   grid-area: stats;
   @include mq('md') {
     border-top:  1px solid #adadad;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  @include mq('lg') {
+    margin-bottom: 50px;
   }
 }
 .new-members {
