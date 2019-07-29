@@ -15,3 +15,24 @@
     }
   }
 }
+
+.media {
+  @include mq('md') {
+    @include flex-me($dir:row, $just:space-around);
+  }
+}
+
+.media-card {
+  @include flex-me($dir:row, $just:space-around);
+
+}
+
+.media-info {
+  text-align: center;
+  > h2 {
+    margin: 0 auto;
+  }
+  > p {
+    margin: 0 auto;
+  }
+}

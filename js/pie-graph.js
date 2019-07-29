@@ -22,7 +22,15 @@ var myDoughnutChart = new Chart(ctx, {
         ]
     },
     options: {
-        circumference: 2* Math.PI,
-        // cutOutPercentage: 50%
+      circumference: 2* Math.PI,
+      // cutOutPercentage: 50%
+      legend: {
+        display: true,
+        position: 'right',
+        labels: {
+            boxWidth: 20,
+            fontStyle: 'bold'
+        }
+      },
     }
 });
