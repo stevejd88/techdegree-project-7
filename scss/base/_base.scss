@@ -84,6 +84,15 @@ canvas {
   max-width: 100%;
 }
 
+.member-card {
+  margin-top: 10px;
+  border-bottom: 1px solid $grey;
+}
+
+.member-info h4 {
+  margin-top: 10px;
+}
+
 
 .switch-toggle {
   @include mq('md'){

@@ -341,6 +341,10 @@ ul {
   padding: 0;
 }
 
+h4 {
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -424,6 +428,15 @@ a {
 canvas {
   max-height: 350px;
   max-width: 100%;
+}
+
+.member-card {
+  margin-top: 10px;
+  border-bottom: 1px solid #adadad;
+}
+
+.member-info h4 {
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
