@@ -733,6 +733,39 @@ nav ul {
   margin: 0 auto;
 }
 
+.member-card {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .member-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+  .member-card img {
+    margin: 0;
+    margin-right: 10px;
+  }
+  .member-card p {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .member-card {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .member-info {
+    margin-right: auto;
+  }
+}
+
 #myChart {
   margin-top: 20px;
 }

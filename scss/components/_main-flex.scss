@@ -46,3 +46,30 @@
     margin: 0 auto;
   }
 }
+
+.member-card {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  @include mq('md') {
+    @include flex-me($dir:row, $just:flex-start);
+    font-size: 12px;
+    padding-bottom: 15px;
+    img {
+      margin: 0;
+      margin-right: 10px;
+    }
+    p {
+      margin-right: 10px;
+    }
+  }
+  @include mq('lg') {
+    font-size: 16px;
+  }
+}
+
+.member-info {
+  @include mq('md') {
+    margin-right: auto;
+  }
+}
