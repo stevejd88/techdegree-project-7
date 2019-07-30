@@ -3,7 +3,8 @@
 // **************************************
 
 nav ul {
-  @include flex-me($dir:row, $just:center);
+  @include flex-me($dir:row, $just:space-evenly);
+  margin-top: 30px;
   @include mq('md') {
     @include flex-me($dir:column, $just:center);
     align-items: center;

@@ -38,6 +38,17 @@ nav img {
   height: 40px;
 }
 
+.nav-icon {
+  fill: $grey;
+  &:focus {
+    fill: $white;
+  }
+}
+
+.svg-nav {
+  margin-bottom: 40px;
+}
+
 svg {
   height: 40px;
 }

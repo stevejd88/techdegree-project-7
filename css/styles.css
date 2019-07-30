@@ -708,6 +708,17 @@ nav img {
   height: 40px;
 }
 
+.nav-icon {
+  fill: #adadad;
+}
+.nav-icon:focus {
+  fill: #fcfcfc;
+}
+
+.svg-nav {
+  margin-bottom: 40px;
+}
+
 svg {
   height: 40px;
 }
@@ -740,7 +751,8 @@ svg {
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
 }
 @media (min-width: 768px) {
   nav ul {
