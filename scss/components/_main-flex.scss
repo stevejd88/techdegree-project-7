@@ -96,9 +96,30 @@
   @include flex-me($dir:column, $just:space-around);
 }
 
+.on-off {
+  margin-right: 50px;
+  margin-top: 10px;
+  @include mq('md') {
+    margin-top: 0px;
+  }
+}
 
 .switch-light {
+  > p {
+    margin-right: auto;
+  }
   @include flex-me($dir:row, $just:space-around);
+  @include mq('md') {
+    > p {
+      margin-top: 0px;
+    }
+  }
+  @include mq('lg') {
+    > p {
+      width: 200px;
+      margin-right: 20px;
+    }
+  }
 }
 
 

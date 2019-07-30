@@ -435,13 +435,18 @@ canvas {
   margin-top: 10px;
   border-bottom: 1px solid #adadad;
 }
+.member-card:last-child,
+.activity-card:last-child {
+  border-bottom: none;
+}
 
 .member-info h4 {
   margin-top: 10px;
 }
 
 .mobile-users h3,
-.recent-activity h3 {
+.recent-activity h3,
+.settings h3 {
   margin-left: 10px;
 }
 
@@ -474,6 +479,25 @@ canvas {
   max-width: 90%;
 }
 
+.send-email {
+  margin-bottom: 20px;
+  padding-top: 5px;
+}
+
+.set-public {
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+@media (min-width: 1024px) {
+  .set-public {
+    margin-bottom: 35px;
+  }
+}
+
+.time-zone {
+  margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
   .switch-toggle {
     width: 300px;
@@ -495,6 +519,32 @@ canvas {
 
 .switch-candy a {
   border-radius: 10px;
+}
+
+.switch-material.switch-light input:checked ~ span {
+  background: #685bcf;
+  height: 30px;
+  width: 60px;
+}
+
+.switch-material.switch-light > span {
+  background: #685bcf;
+  height: 30px;
+  width: 60px;
+}
+
+.switch-light.switch-material a {
+  background: #fcfcfc;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+
+.switch-material.switch-light input:checked ~ span a {
+  background: #fcfcfc;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
 }
 
 header {
@@ -838,10 +888,34 @@ nav ul {
   justify-content: space-around;
 }
 
+.on-off {
+  margin-right: 50px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .on-off {
+    margin-top: 0px;
+  }
+}
+
 .switch-light {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.switch-light > p {
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .switch-light > p {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .switch-light > p {
+    width: 200px;
+    margin-right: 20px;
+  }
 }
 
 .save-cancel {
@@ -872,16 +946,19 @@ nav ul {
 
 .setting-save {
   background-color: #685bcf;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #fcfcfc;
+  padding: 20px;
+  text-transform: uppercase;
   width: 40%;
 }
 
 .setting-cancel {
   background-color: #adadad;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #fcfcfc;
-  padding: 10px;
+  padding: 20px;
+  text-transform: uppercase;
   width: 40%;
 }
 

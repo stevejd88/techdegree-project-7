@@ -88,14 +88,20 @@ canvas {
 .activity-card {
   margin-top: 10px;
   border-bottom: 1px solid $grey;
+  &:last-child {
+    border-bottom: none;
+  }
 }
+
+
 
 .member-info h4 {
   margin-top: 10px;
 }
 
 .mobile-users h3,
-.recent-activity h3 {
+.recent-activity h3,
+.settings h3 {
   margin-left: 10px;
 }
 
@@ -127,7 +133,20 @@ canvas {
 }
 
 .send-email {
+  margin-bottom: 20px;
+  padding-top: 5px;
+}
 
+.set-public {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  @include mq('lg') {
+    margin-bottom: 35px;
+  }
+}
+
+.time-zone {
+  margin-bottom: 20px;
 }
 
 .switch-toggle {
@@ -151,4 +170,31 @@ canvas {
 
 .switch-candy a {
   border-radius: 10px;
+}
+
+.switch-material.switch-light input:checked ~ span {
+  background: $main-med;
+  height: 30px;
+  width: 60px;
+}
+
+.switch-material.switch-light > span {
+  background: $main-med;
+  height: 30px;
+  width: 60px;
+}
+
+.switch-light.switch-material a {
+  background: $white;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+
+
+.switch-material.switch-light input:checked ~ span a {
+  background: $white;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
 }
