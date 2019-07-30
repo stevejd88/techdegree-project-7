@@ -48,7 +48,8 @@
   }
 }
 
-.member-card {
+.member-card,
+.activity-card {
   align-items: center;
   margin: 0 auto;
   margin-top: 10px;
@@ -69,8 +70,20 @@
   }
 }
 
-.member-info {
+.member-info,
+.member-action {
   @include mq('md') {
     margin-right: auto;
+  }
+}
+
+.activity-card {
+  margin-left: 10px;
+}
+
+.member-action {
+  > p {
+    margin: 0 auto;
+    margin-top: 10px;
   }
 }

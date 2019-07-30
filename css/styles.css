@@ -430,13 +430,28 @@ canvas {
   max-width: 100%;
 }
 
-.member-card {
+.member-card,
+.activity-card {
   margin-top: 10px;
   border-bottom: 1px solid #adadad;
 }
 
 .member-info h4 {
   margin-top: 10px;
+}
+
+.mobile-users h3,
+.recent-activity h3 {
+  margin-left: 10px;
+}
+
+.arrow {
+  display: none;
+}
+@media (min-width: 768px) {
+  .arrow {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -641,6 +656,15 @@ svg {
   width: 35px;
 }
 
+.arrow-right {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -734,37 +758,52 @@ nav ul {
   margin: 0 auto;
 }
 
-.member-card {
+.member-card,
+.activity-card {
   align-items: center;
   margin: 0 auto;
   margin-top: 10px;
 }
 @media (min-width: 768px) {
-  .member-card {
+  .member-card,
+.activity-card {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     font-size: 12px;
     padding-bottom: 15px;
   }
-  .member-card img {
+  .member-card img,
+.activity-card img {
     margin: 0;
     margin-right: 10px;
   }
-  .member-card p {
+  .member-card p,
+.activity-card p {
     margin-right: 10px;
   }
 }
 @media (min-width: 1024px) {
-  .member-card {
+  .member-card,
+.activity-card {
     font-size: 16px;
   }
 }
 
 @media (min-width: 768px) {
-  .member-info {
+  .member-info,
+.member-action {
     margin-right: auto;
   }
+}
+
+.activity-card {
+  margin-left: 10px;
+}
+
+.member-action > p {
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 #myChart {

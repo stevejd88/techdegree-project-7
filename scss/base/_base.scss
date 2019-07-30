@@ -84,13 +84,26 @@ canvas {
   max-width: 100%;
 }
 
-.member-card {
+.member-card,
+.activity-card {
   margin-top: 10px;
   border-bottom: 1px solid $grey;
 }
 
 .member-info h4 {
   margin-top: 10px;
+}
+
+.mobile-users h3,
+.recent-activity h3 {
+  margin-left: 10px;
+}
+
+.arrow {
+  display: none;
+  @include mq('md') {
+    display: block;
+  }
 }
 
 
