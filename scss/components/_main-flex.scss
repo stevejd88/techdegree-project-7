@@ -87,3 +87,7 @@
     margin-top: 10px;
   }
 }
+
+.message-flex {
+  @include flex-me($dir:column, $just:space-around);
+}

@@ -106,6 +106,18 @@ canvas {
   }
 }
 
+.user-search,
+.search-text {
+  background-color: rgba(173, 173, 173, 0.15);
+  border: 1px solid #adadad;
+  border-radius: 3px;
+  color: #adadad;
+  margin: auto;
+  margin-bottom: 15px;
+  min-width: 90%;
+  max-width: 90%;
+  padding: 10px 0 10px 10px;
+}
 
 .switch-toggle {
   @include mq('md'){

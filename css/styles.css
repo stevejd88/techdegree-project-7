@@ -454,6 +454,19 @@ canvas {
   }
 }
 
+.user-search,
+.search-text {
+  background-color: rgba(173, 173, 173, 0.15);
+  border: 1px solid #adadad;
+  border-radius: 3px;
+  color: #adadad;
+  margin: auto;
+  margin-bottom: 15px;
+  min-width: 90%;
+  max-width: 90%;
+  padding: 10px 0 10px 10px;
+}
+
 @media (min-width: 768px) {
   .switch-toggle {
     width: 300px;
@@ -806,12 +819,30 @@ nav ul {
   margin-top: 10px;
 }
 
+.message-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 #myChart {
   margin-top: 20px;
 }
 
 #pieGraph {
   margin-bottom: 20px;
+}
+
+.user-search-btn {
+  background-color: #685bcf;
+  border-radius: 5px;
+  color: #fcfcfc;
+  margin: auto;
+  margin-bottom: 15px;
+  min-width: 90%;
+  max-width: 90%;
+  text-transform: uppercase;
+  padding: 20px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
