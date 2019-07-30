@@ -435,9 +435,11 @@ canvas {
   margin-top: 10px;
   border-bottom: 1px solid #adadad;
 }
-.member-card:last-child,
+@media (min-width: 768px) {
+  .member-card:last-child,
 .activity-card:last-child {
-  border-bottom: none;
+    border-bottom: none;
+  }
 }
 
 .member-info h4 {
@@ -867,8 +869,20 @@ nav ul {
   }
 }
 
+@media (min-width: 1024px) {
+  .activity-card {
+    font-size: 14px;
+  }
+}
+
 .activity-card {
   margin-left: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .activity-card {
+    padding-bottom: 15px;
+  }
 }
 
 .member-action > p {

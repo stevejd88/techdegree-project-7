@@ -78,7 +78,17 @@
 }
 
 .activity-card {
+  @include mq('lg') {
+    font-size: 14px;
+  }
+}
+
+.activity-card {
   margin-left: 10px;
+  padding-bottom: 10px;
+  @include mq('md') {
+    padding-bottom: 15px;
+  }
 }
 
 .member-action {

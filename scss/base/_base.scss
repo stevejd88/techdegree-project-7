@@ -89,10 +89,11 @@ canvas {
   margin-top: 10px;
   border-bottom: 1px solid $grey;
   &:last-child {
-    border-bottom: none;
+    @include mq('md') {
+      border-bottom: none;
+    }
   }
 }
-
 
 
 .member-info h4 {
