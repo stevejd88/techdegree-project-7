@@ -13,3 +13,18 @@
   text-transform: uppercase;
   padding: 20px 0;
 }
+
+.setting-save {
+  background-color: $main-med;
+  border-radius: 3px;
+  color: $white;
+  width: 40%;
+}
+
+.setting-cancel {
+  background-color: $grey;
+  border-radius: 3px;
+  color: $white;
+  padding: 10px;
+  width: 40%;
+}

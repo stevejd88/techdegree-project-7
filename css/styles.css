@@ -455,7 +455,8 @@ canvas {
 }
 
 .user-search,
-.search-text {
+.search-text,
+.time-zone {
   background-color: rgba(173, 173, 173, 0.15);
   border: 1px solid #adadad;
   border-radius: 3px;
@@ -465,6 +466,12 @@ canvas {
   min-width: 90%;
   max-width: 90%;
   padding: 10px 0 10px 10px;
+}
+
+.settings-choose {
+  margin: 0 auto;
+  min-width: 90%;
+  max-width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -825,6 +832,24 @@ nav ul {
   justify-content: space-around;
 }
 
+.settings-choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.switch-light {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.save-cancel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #myChart {
   margin-top: 20px;
 }
@@ -843,6 +868,21 @@ nav ul {
   max-width: 90%;
   text-transform: uppercase;
   padding: 20px 0;
+}
+
+.setting-save {
+  background-color: #685bcf;
+  border-radius: 3px;
+  color: #fcfcfc;
+  width: 40%;
+}
+
+.setting-cancel {
+  background-color: #adadad;
+  border-radius: 3px;
+  color: #fcfcfc;
+  padding: 10px;
+  width: 40%;
 }
 
 /*# sourceMappingURL=styles.css.map */

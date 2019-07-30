@@ -91,3 +91,17 @@
 .message-flex {
   @include flex-me($dir:column, $just:space-around);
 }
+
+.settings-choose {
+  @include flex-me($dir:column, $just:space-around);
+}
+
+
+.switch-light {
+  @include flex-me($dir:row, $just:space-around);
+}
+
+
+.save-cancel {
+  @include flex-me($dir:row, $just:space-around);
+}
