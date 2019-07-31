@@ -1004,4 +1004,33 @@ nav ul {
   width: 40%;
 }
 
+.alert-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  background-color: #685bcf;
+  border-radius: 3px;
+  color: #fcfcfc;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.alert-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-right: auto;
+}
+.alert-wrapper > h3 {
+  margin: 0px 10px;
+}
+
+.btn-alert {
+  background-color: #685bcf;
+  color: #fcfcfc;
+  border: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

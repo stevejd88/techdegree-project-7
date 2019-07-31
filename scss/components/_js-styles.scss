@@ -1,0 +1,29 @@
+// **************************************
+// JavaScript styles
+// **************************************
+
+
+.alert-banner {
+  @include flex-me($dir:row, $just:left);
+  align-items: center;
+  background-color: $main-med;
+  border-radius: 3px;
+  color: $white;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.alert-wrapper {
+  @include flex-me($dir:row, $just:left);
+  align-items: center;
+  margin-right: auto;
+  > h3 {
+    margin: 0px 10px;
+  }
+}
+
+.btn-alert {
+  background-color: $main-med;
+  color: $white;
+  border: none;
+}
