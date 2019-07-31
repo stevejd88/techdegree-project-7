@@ -6,6 +6,12 @@ header {
   grid-area: head;
   @include flex-me($dir:row, $just:space-between);
 }
+
+.current-user{
+  @include flex-me($dir:row, $just:flex-end);
+  align-items: center;
+}
+
 nav {
   grid-area: navi;
 }

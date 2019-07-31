@@ -6,7 +6,7 @@ img {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  margin: auto;
+  // margin: auto;
 }
 
 header img {
@@ -15,17 +15,17 @@ header img {
 }
 
 .img-main-user {
-  margin-left: 10px;
+  margin-right: 5px;
     @include mq('md') {
       margin: 0;
       margin-right: 10px;
-      margin-top: 30px;
     }
 }
 
 .alert-img {
   width: 30px;
   height: 30px;
+  margin: auto;
   @include mq('md') {
     margin-right: 15px;
   }
@@ -40,8 +40,9 @@ nav img {
 
 .nav-icon {
   fill: $grey;
-  &:focus {
+  &:hover{
     fill: $white;
+    border: 1px solid green;
   }
 }
 

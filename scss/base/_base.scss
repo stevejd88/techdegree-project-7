@@ -26,12 +26,19 @@ header {
   }
 }
 
+.current-name {
+  width: 45%;
+  @include mq('md') {
+    width: 70%;
+    margin-right: 10px;
+  }
+}
+
 hr {
   height: 50px;
-  margin: auto;
+  margin: auto 15px auto 10px;
   @include mq('md') {
     margin: 0;
-    margin-top: 20px;
     margin-right: 15px;
   }
 }
