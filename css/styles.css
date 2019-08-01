@@ -709,11 +709,31 @@ header img {
   width: 30px;
   height: 30px;
   margin: auto;
+  transition: transform 0.4s ease-out;
 }
-@media (min-width: 768px) {
-  .alert-img {
-    margin-right: 15px;
-  }
+
+.alert-img:hover {
+  transform: rotate(30deg);
+}
+
+.notification {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  margin-right: 15px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 8px;
 }
 
 nav img {

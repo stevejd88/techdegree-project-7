@@ -1,6 +1,7 @@
 const alertPopUp = document.getElementById('alertPopUp');
 const btnAlert = document.querySelector('.btn-alert');
 
+//create pop up alert div
 alertPopUp.innerHTML =
 `
 <div class="alert-banner">
@@ -14,7 +15,7 @@ alertPopUp.innerHTML =
 </div>
 `;
 
-
+// Event-handler to close alert popup
 const displayNone = (el, value) => {
   el.addEventListener('click', e => {
     const element = e.target;
