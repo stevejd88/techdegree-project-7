@@ -61,18 +61,18 @@
           </div> <!--Empty Div for JavaScript alert -->
           <div class="time-toggle">
             <h3>traffic</h3>
-            <div class="switch-toggle switch-candy">
+            <div id="changeGraph" class="switch-toggle switch-candy">
               <input id="hour3" name="view3" type="radio" checked>
-              <label for="hour3" onclick="">Hourly</label>
+              <label for="hour3" onclick="hourData()">Hourly</label>
 
               <input id="day3" name="view3" type="radio">
-              <label for="day3" onclick="">Daily</label>
+              <label for="day3" onclick="dailyData()">Daily</label>
 
               <input id="week3" name="view3" type="radio">
-              <label for="week3" onclick="">Weekly</label>
+              <label for="week3" onclick="weeklyData()">Weekly</label>
 
               <input id="month3" name="view3" type="radio">
-              <label for="month3" onclick="">Monthly</label>
+              <label for="month3" onclick="monthlyData()">Monthly</label>
 
               <a></a>
             </div>
